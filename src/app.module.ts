@@ -14,7 +14,7 @@ import { Produto } from './produto/entities/produto.entity';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'westwing',
+      password: '',
       database: 'db_loja_games',
       entities: [Categoria, Produto],
       synchronize: true
