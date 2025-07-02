@@ -13,7 +13,9 @@ export class CategoriaService {
 
     async findAll(): Promise<Categoria[]> {
         const categorias = await this.categoriaRepository.find({
-            relations: ['produtos'],
+            relations: {
+                produtos: true
+            }
         });
         return categorias;
     }
